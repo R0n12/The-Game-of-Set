@@ -1,4 +1,3 @@
-# Project 2
 ### Game of Set
 We implemented GUI using Ruby Shoes. You cannot run the ruby file (Set.rb) through the terminal; you can only run it through the Shoes software which can be downloaded and installed from the Ruby Shoes website: http://shoesrb.com/downloads/. Afterward download is complete, it can be installed on Linux using the instructions found here: https://askubuntu.com/questions/650638/how-to-install-shoes-gui-framework-for-ruby-install-file. Then, opening the Shoes app, you can 'run an app' and select the ````/Set/Shoes.rb```` file to run.
 
@@ -23,7 +22,7 @@ Each member completed test files for their own code, but was checked by the enti
 
 At the end, after merges, we fixed bugs and moved classes and code to different files where appropriate, together as a group.
 
-### Helpful tips for the Grader! :)
+### Helpful tips
 
 If you would like to test full functionality by finding only one set (as opposed to ALL sets), change ````unless find_set(@board.board)```` to ````unless !find_set(@board.board)```` on line 125 in ````Set/SetGame.rb````. This will cause the game to end after finding just one set.
 
