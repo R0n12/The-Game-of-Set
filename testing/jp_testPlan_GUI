@@ -1,0 +1,72 @@
+Testing Plan for Shoes.rb
+Created 2/6/2020 by Juhee Park
+
+- Starting game opens window that shows:
+	- menu flows which contain:
+		- color blind mode checkbox,
+		- high scores button
+		- hint generator button
+		- new game button
+	- game instruction display to pick 3 cards and make a set
+	- table of 12 or more cards with black border, 
+
+- Check that each image of the card matched its string representation which was printed under each image
+	Note: the printing of the string representation is removed for the final submission
+
+- Images of the cards:
+	- for shapes with solid/patterned fill, the outline color of the shapes matches the fill color.
+	- the correct number of shapes are all visible within each card, and each shape is identifiable (no shapes spatially overlap with another)
+
+- Check the Color Blind Mode checkbox: the color of the card shapes is written underneath each card
+
+- Uncheck the Color Blind Mode chekbox: the text (of card color) is removed from each card
+
+- Color Blind Mode can be checked/unchecked as many times and whenever throughout the game
+
+- Click on a card with black border: the border of selected card changes from black to gold.
+
+- Click on a card with gold border: the border of selected card changes from gold to black.
+
+- Click on two cards with black border: the borders of two selected cards change from black to gold.
+
+- Select three cards which are not a set:
+	- upon selection of third card, the game instruction display shows a red background with message that user selection was not a valid set.
+	- the menu flow and table of cards are not altered.
+	- the previously selected cards become "unselected" and card borders return to black color.
+
+- Select three card which make up a set:
+	- upon selection of third card, the table refreshes:
+		- the selected cards disappear
+		- the remaining cards shift left and up to fill the space of old cards
+		- 3 or more new cards appear at the right and bottom of the table
+		- all cards have black border
+	- the menu flow and game instruction display are not altered.
+
+- Number of cards on table increase: if 12 cards do not contain any sets, the table displays 15 (or more, in increments of 3) cards, with 6 cards in each row.
+
+- Number of cards on table decrease:
+	- if a set is found among a display of more than 12 cards, the set of cards are deleted from the display, but additional cards are only added if no sets exist.
+	- if a set is found from 12 cards, but the game reaches the end of the deck, no cards can be added to the table.
+
+- Click the High Scores button:
+	- before there are any scores: opens a new window which displays the message to finish a game first.
+	- after there are stats to show: opens a new window which displays the top 10 scores (or all the scores if the number of scores is less than 10).
+	- can click this button in the middle of playing the game and after game is over.
+
+- Click the hint generator button:
+	- one card is highlighted by fuchsia border which lasts 1 seconds, and is then reverted back to the black border.
+
+- Select up to two cards, then click the hint generator button:
+	- selected cards are "unselected" and have black border
+	- one card is highlighted by fuchsia border for 1 second and then reverted to black border.
+
+- Finish the game:
+	- the color blind mode checkbox is removed from window
+	- the hint generator button is removed from window
+	- the game instruction display is cleared
+	- the table is cleared of cards and instead displays time elapsed.
+	- high scores button and new game button are clickable.
+
+- Click the new game button:
+	- in the middle of a game: table displays all new cards.
+	- at the end of game: window refreshes to change from the time-elapsed display to the table display of new cards. The color-blind mode checkbox and the hint-generator button reappear at the top menu.
